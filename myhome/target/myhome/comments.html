@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>qpz的个人主页</title>
+		<link href="download/css/bootstrap.min.css" rel="stylesheet">
+		<link href="download/css/main.min.css" rel="stylesheet" />
+		<link href="download/css/iconfont.css" rel="stylesheet" />
+		<link href="input_box/myemojiPl.css" rel="stylesheet" />
+		<!--<link href="css/Mypagination.css" rel="stylesheet" />-->
+		<link rel="stylesheet" type="text/css" href="download/css/pagination.css" />
+		<script src="download/js/jquery-3.2.1.min.js"></script>
+		<script src="download/js/bootstrap.min.js"></script>
+		<script src="download/js/jquery.pagination.js"></script>
+		<script src="input_box/myemojiPl.js"></script>
+		<script src="js/comment.js"></script>
+		<style>
+			.post {
+				padding: 35px;
+				background: #ffffff;
+				margin-bottom: 35px;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.widget {
+				background: #ffffff;
+				padding: 21px 30px;
+				margin-bottom: 35px;
+				/*min-height: 800px;*/
+			}
+			
+			.comment_divide {
+				margin-top: 0px;
+				border-top: 2px solid #0086e5;
+			}
+			
+			.comment_item {
+				border-bottom: 1px darkgray solid;
+				padding-bottom: 12px;
+				padding-top: 18px;
+			}
+			
+			a {
+				color: #0086e5;
+				outline: none;
+			}
+			.comments_list{
+				min-height: 500px;
+			}
+			.comment_item font {
+				float: right;
+			}
+			
+			.comment_item i {
+				color: darkgray;
+				padding-left: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="section">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+						                <span class="icon-bar"></span>
+						                <span class="icon-bar"></span>
+						                <span class="icon-bar"></span>
+						            </button>
+						<a class="navbar-brand" href="http://www.yomail.com/#">
+							<img src="img/logo.png" class="img-responsive" alt="qpz的个人主页">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+							<li>
+								<a href="home.html">首页</a>
+							</li>
+							<li>
+								<a href="aboutMe.html">关于我</a>
+							</li>
+							<li>
+								<a href="diary.html">岁月陈歌</a>
+							</li>
+							<li>
+								<a href="essay.html">闲情杂记</a>
+							</li>
+							<li>
+								<a href="code.html">代码之道</a>
+							</li>
+							<!--<li>
+								<a href="#">时光剪影</a>
+							</li>-->
+							<li class="active">
+								<a href="comments.html">留言</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="section" style="background: #ebebeb;">
+			<div class="container">
+				<div class="row" style="margin-top: 10px;">
+					<main class="col-md-8 main-content">
+						<div class="widget">
+							<div class="Main2">
+								<div class="Input_Box">
+									<div contenteditable="true" class="Input_text"></div>
+									<div class="Input_Foot">
+										<a class="imgBtn" href="javascript:void(0);"><i class="iconfont icon-biaoqinghover" style="font-size: 23px;"></i></a>
+										<a class="postBtn"><i class="iconfont icon-send" style="font-size: 23px;"></i></a>
+									</div>
+								</div>
+								<div class="faceDiv" style="display: none;">
+									<section class="emoji_container">
+									</section>
+									<section class="emoji_tab"></section>
+								</div>
+							</div>
+							<div class="comments_list" >
+								<p style="color:  #0086e5;">评论列表
+									<font style="float: right;" class="totalCount"></font>
+								</p>
+								<hr class="comment_divide" />
+								<div class="commentItem_parent">
+									<!--<div class="comment_item">
+										<p>
+											加油！！！！我看好你呀，明天会更加棒，绚丽的日子等着你呀，哈哈哈
+											<br>
+											<font><i class="iconfont icon-dianzan">10</i><i class="iconfont icon-cai">1</i></font>
+										</p>
+									</div>-->
+								</div>
+								<div id="comments_pagination" class="myPagination">
+
+								</div>
+							</div>
+						</div>
+					</main>
+					<aside class="col-md-4 sidebar">
+						<div class="widget">
+							<h4 class="title">个人基础资料</h4>
+							<div class="content community">
+								<p>姓名：qinpz（女）</p>
+								<p>籍贯：湖北宜昌</p>
+								<p>身份：浙大计算机研究生</p>
+								<p>学校：武汉大学，浙江大学</p>
+								<p>座右铭：天道有常，不为尧存，不为桀亡</p>
+								<p>个人微信号：lengtong1995</p>
+								<a target="_blank" href="http://weibo.com/u/1016257147?refer_flag=1001030102_&is_all=1" title="Ghost中文网问答社区"><i class="iconfont icon-weibo"></i> 微博主页</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer class="about-us">
+			<div class="container">
+				<div class="row">
+				</div>
+				<hr>
+				<div style="text-align: center;margin-bottom: 1rem;">
+					Copyright ©qinpz <span id="year">2017</span>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$('.Main2').myEmoji();
+		</script>
+
+	</body>
+
+</html>

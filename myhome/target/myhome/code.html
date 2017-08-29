@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>qpz的个人主页</title>
+		<link href="download/css/bootstrap.min.css" rel="stylesheet">
+		<link href="download/css/main.min.css" rel="stylesheet" />
+		<link href="download/css/iconfont.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="download/css/pagination.css" />
+		<link rel="stylesheet" href="css/code.css" />
+		<script src="download/js/jquery-3.2.1.min.js"></script>
+		<script src="download/js/bootstrap.min.js"></script>
+		<script src="download/js/jquery.pagination.js"></script>
+		<script type="text/javascript" src="js/code.js" ></script>
+	</head>
+	<body>
+		<div class="section">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+						                <span class="icon-bar"></span>
+						                <span class="icon-bar"></span>
+						                <span class="icon-bar"></span>
+						            </button>
+						<a class="navbar-brand" href="http://www.yomail.com/#">
+							<img src="img/logo.png" class="img-responsive" alt="qpz的个人主页">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+							<li>
+								<a href="home.html">首页</a>
+							</li>
+							<li>
+								<a href="aboutMe.html">关于我</a>
+							</li>
+							<li>
+								<a href="diary.html">岁月陈歌</a>
+							</li>
+							<li>
+								<a href="essay.html">闲情杂记</a>
+							</li>
+							<li class="active">
+								<a href="code.html">代码之道</a>
+							</li>
+							<!--<li>
+								<a href="#">时光剪影</a>
+							</li>-->
+							<li>
+								<a href="comments.html">留言</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="section" style="background: #ebebeb;">
+			<div class="container">
+				<div class="row" style="margin-top: 10px;">
+					<main class="col-md-8 main-content" style="min-height: 550px;">
+						<div class="article_parent">
+						</div>
+						<div id="essay_pagination" class="myPagination">
+
+						</div>
+					</main>
+					<aside class="col-md-4 sidebar">
+						<div class="widget">
+							<div class="reviews-form">
+								<input type="text" value="" id="essay_searchArticle" name="s" class="form-control" placeholder="Search for...">
+								<a class="btn btn-default"><i class="glyphicon glyphicon-search"></i></a>
+							</div>
+						</div>
+
+						<div class="widget widget_categories">
+							<h5 class="title">分类目录</h5>
+							<ul>
+								<li class="" name="1">
+									<a>算法</a> (<font>0</font>)
+								</li>
+								<li class="" name="2">
+									<a>代码相关</a> (<font>0</font>)
+								</li>
+								<li class="" name="3">
+									<a>常用工具</a> (<font>0</font>)
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer class="about-us">
+			<div class="container">
+				<div class="row">
+				</div>
+				<hr>
+				<div style="text-align: center;margin-bottom: 1rem;">
+					Copyright ©qinpz <span id="year">2017</span>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
